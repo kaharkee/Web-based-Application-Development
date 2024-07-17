@@ -1,0 +1,37 @@
+#head {
+  text-align: center;
+  color: darkblue;
+  background-color: lightcyan;
+  font-size: 1.2em;
+}
+
+#para {
+  text-align: center;
+  color: darkblue;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+hr {
+  font-weight: bold;
+}
+
+#foot {
+  text-align: center;
+  color: darkblue;
+  background-color: lightcyan;
+  font-size: 1.2em;
+}
+
+#div {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+img {
+  height: 80px;
+  width: 70px;
+  padding: 10px;
+  border: 2px solid;
+  border-color: darkblue;
+}
