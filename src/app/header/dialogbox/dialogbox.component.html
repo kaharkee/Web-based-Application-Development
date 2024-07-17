@@ -1,0 +1,37 @@
+<h2
+  mat-dialog-title
+  [ngStyle]="{
+    textAlign: 'center',
+    backgroundColor: 'mediumblue',
+    color: 'whitesmoke'
+  }"
+>
+  All About Me
+</h2>
+
+<div
+  mat-dialog-content
+  [ngStyle]="{
+    textAlign: 'center',
+    backgroundColor: 'lightgoldenrodyellow',
+    fontWeight: 'bold',
+    color: 'black'
+  }"
+>
+  My Name:{{ data.A4Name }} <br /><br />
+  ID: {{ data.A4ID }} / Login:{{ data.A4Login }} <br /><br />
+  Contact Me At: <br />{{ data.A4Email }}
+
+  <div id="pic">
+    <img src="{{ data.A4Photo }}" width="120px" height="85px" />
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button
+    mat-raised-button
+    (click)="onOK()"
+    [ngStyle]="{ Align: 'center', marginLeft: '155px' }"
+  >
+    OK
+  </button>
+</div>

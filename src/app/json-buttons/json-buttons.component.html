@@ -1,0 +1,14 @@
+<h3>Click a Nation's Button to see list of Art</h3>
+
+<button
+  *ngFor="let n of nationList"
+  mat-fab
+  color="primary"
+  (click)="Info(n.nation)"
+>
+  {{ n.nation }}
+</button>
+
+<p [innerHTML]="outResult"></p>
+
+<hr />

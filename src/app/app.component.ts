@@ -1,23 +1,18 @@
 import { Component } from '@angular/core';
-
-import { Kaharkee } from './myClasses/kaharkee';
+import { Personal } from './myInterfaces/kaharkee';
+import { Nation, Detailed } from './myInterfaces/continent';
+import A4Json from '../assets/data/A4.json';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'kaharkeeA3';
+  title = 'A4kaharkee';
 
-  info: Kaharkee = {
-    Fname: 'Harkeerat',
-    Lname: 'Kaur',
-    Sid: 991608248,
-    Username: 'kaharkee',
-    Progname: 'CP',
-    Semail: 'kaharkee@sheridancollege.ca',
-    Hcampus: 'Davis ',
-    City: 'Brampton',
-    Picname: 'AvatarMaker.png',
-  };
+  personal: Personal = A4Json.personal;
+
+  nation: Nation[] = A4Json.nationsFeatured;
+
+  detail: Detailed[] = A4Json.artDetails;
 }
