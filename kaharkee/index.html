@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link href="css/kaharkee.css" rel="stylesheet" />
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kaharkee / 991608248</title>
+    <script src="js/kaharkee.js"></script>
+  </head>
+
+  <body onload="CreateMain()">
+    <header id="main"></header>
+    <section id="grid">
+      <div id="context">
+        <h3>LIST OF ZOO ANIMALS</h3>
+      </div>
+      <div id="section">
+        <button onclick="panel()" id="italic">
+          Toggle formatting of left panel to italic and underlined
+        </button>
+        <hr />
+        <button onclick="animal()" id="toggle">
+          Click to toggle a border to all paragraphs that contain "Mammal" in
+          left panel
+        </button>
+        <hr />
+        <button onclick="colour()" id="bird">
+          Click to change the background colour on all paragraphs in left panel
+          whose class attribute is 'Bird'
+        </button>
+        <hr />
+      </div>
+    </section>
+    <footer id="content"></footer>
+  </body>
+</html>

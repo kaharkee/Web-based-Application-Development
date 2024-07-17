@@ -1,0 +1,22 @@
+.c {
+  text-align: center;
+}
+body {
+  background-image: radial-gradient(
+    circle at center center,
+    lightpink 5%,
+    lightblue 100%
+  );
+}
+
+#div {
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  padding: 20px;
+  color: darkorchid;
+  font-weight: bold;
+  font-size: 2em;
+}

@@ -1,0 +1,24 @@
+{
+  "StudentData": {
+    "studentName": "Harkeerat Kaur",
+    "studentID": "991608248",
+    "studentLogin": "kaharkee",
+    "studentProgram": "Computer Programming Diploma",
+    "studentHome": "India",
+    "studentImage": "Liza.jpg"
+  },
+
+  "zooAnimals": [
+    { "aID": 11, "aName": "Tiger", "aClass": "Mammal", "aImg": "tiger02.jpg" },
+    {
+      "aID": 22,
+      "aName": "Elephant",
+      "aClass": "Mammal",
+      "aImg": "elephant.jpg"
+    },
+    { "aID": 33, "aName": "Parrot", "aClass": "Bird", "aImg": "parrot.jpg" },
+    { "aID": 44, "aName": "Peacock", "aClass": "Bird", "aImg": "peacock.jpg" },
+    { "aID": 55, "aName": "Cobra", "aClass": "Reptile", "aImg": "cobra.jpg" },
+    { "aID": 66, "aName": "Python", "aClass": "Reptile", "aImg": "python.jpg" }
+  ]
+}

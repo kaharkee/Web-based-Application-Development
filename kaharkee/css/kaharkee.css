@@ -1,0 +1,63 @@
+#main {
+  text-align: center;
+  color: blue;
+  gap: 6px;
+  background-color: lightsteelblue;
+  height: 25px;
+  width: auto;
+  margin: 10px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 110px;
+}
+button {
+  background-color: antiquewhite;
+
+  padding: 2px 3px;
+  justify-content: space-around;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#section {
+  background-color: lavender;
+
+  padding: 2px 3px;
+  font-size: medium;
+}
+#italic {
+  width: 50%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  border-width: 1px;
+  border: 2px solid Blue;
+}
+
+#content {
+  text-align: center;
+}
+#context {
+  background-color: bisque;
+  text-align: center;
+  padding: 2px 3px;
+  font-size: medium;
+}
+
+#context p.Mammal {
+  color: royalblue;
+}
+
+#context p.Bird {
+  color: rgb(192, 87, 134);
+}
+
+#context p.Reptile {
+  color: green;
+}
