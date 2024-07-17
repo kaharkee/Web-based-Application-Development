@@ -1,0 +1,100 @@
+<!-- A3 Grid Layout - content component HTML -->
+<!-- This is provided as a reference and does not have to be used -->
+
+<section class="gridArea">
+  <div class="area1">
+    <div>
+      Current Date: {{ pdate | date : "EEEE, MMMM d, y" }}<br /><br />
+      <img
+        #identity
+        src="assets/images/AvatarMaker.png"
+        alt="Myself"
+        width="150px"
+        height="120px"
+        id="favorite"
+        (click)="dawn($event)"
+      /><br /><br />
+
+      <i>Click my picture to scale down the image by 50%</i>
+    </div>
+  </div>
+
+  <div class="area2" [ngStyle]="{ textAlign: 'center' }">
+    <button
+      type="button"
+      (click)="load('rotated')"
+      id="btn1"
+      [ngStyle]="{
+        margin: '5px 0',
+        'border-radius': '10px',
+        padding: '20px',
+        'text-transform': 'uppercase',
+        'font-variant': 'small-caps',
+        'font-size': '10px'
+      }"
+    >
+      Rotate the image 180 degrees</button
+    ><br />
+    <br />
+    <button
+      type="button"
+      id="btn2"
+      (click)="load('backed')"
+      [ngStyle]="{
+        margin: '5px 0',
+        'border-radius': '10px',
+        padding: '15px',
+        'text-transform': 'uppercase',
+        'font-size': '10px',
+        'font-variant': 'small-caps'
+      }"
+    >
+      Rotate the image size back to 0 degrees
+    </button>
+  </div>
+
+  <div
+    class="area3"
+    [ngStyle]="{ textAlign: 'center', backgroundColor: 'lemonchiffon' }"
+  >
+    <br />
+
+    <label
+      ><b>What is your Sheridan Program?</b><br />
+      <input type="text" [(ngModel)]="SheridanProgram"
+    /></label>
+    <br /><br />
+    <hr style="margin: 20px 0" />
+
+    <p
+      *ngIf="(SheridanProgram | uppercase) === 'CP'; else progEntered"
+      [ngClass]="{
+        div: (SheridanProgram | uppercase) === 'CP' ? 'matched' : 'not-matched'
+      }"
+    >
+      PROGRAM FOR {{ contentInfo.Fname | uppercase }}
+      {{ contentInfo.Lname | uppercase }}:
+      <br />
+      <br />
+      {{ SheridanProgram }}
+      <br />
+      <br />
+    </p>
+
+    <ng-template #progEntered>
+      <p
+        [ngClass]="{
+          divident:
+            (SheridanProgram | lowercase) === 'cp' ? 'matched' : 'not-matched'
+        }"
+      >
+        Sheridan Program Entered:
+        <br />
+        <br />
+        {{ SheridanProgram }}
+        <br />
+        <br />
+      </p>
+    </ng-template>
+  </div>
+</section>
