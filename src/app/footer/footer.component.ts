@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Kaharkee } from '../myClasses/kaharkee';
 
 @Component({
   selector: 'app-footer',
@@ -6,9 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.css'],
 })
 export class FooterComponent implements OnInit {
-  cdate = new Date();
-
+  @Input() footerInfo!: Kaharkee;
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit(): void {}
 }

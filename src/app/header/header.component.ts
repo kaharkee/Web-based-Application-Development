@@ -1,7 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Personal } from '../myInterfaces/kaharkee';
-import { MatDialog } from '@angular/material/dialog';
-import { DialogboxComponent } from './dialogbox/dialogbox.component';
+import { Kaharkee } from '../myClasses/kaharkee';
 
 @Component({
   selector: 'app-header',
@@ -9,14 +7,9 @@ import { DialogboxComponent } from './dialogbox/dialogbox.component';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  @Input() personal!: Personal;
+  @Input() headerInfo!: Kaharkee;
 
-  constructor(public dialog: MatDialog) {}
-  aboutMe() {
-    const dialogRef = this.dialog.open(DialogboxComponent, {
-      data: this.personal,
-      width: '400px',
-    });
-  }
-  ngOnInit() {}
+  constructor() {}
+
+  ngOnInit(): void {}
 }
